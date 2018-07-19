@@ -54,3 +54,9 @@ if [ -d $dgdb ]; then
 	export PATH=${dgdb}/bin:${PATH}
 	export LD_LIBRARY_PATH=${dgdb}/lib:${LD_LIBRARY_PATH}
 fi
+
+# to get xrootd
+dxrd=${LOCAL}/xrootd
+if [ -d $dxrd ]; then
+	export LD_LIBRARY_PATH=${dxrd}/lib64:${LD_LIBRARY_PATH}
+fi

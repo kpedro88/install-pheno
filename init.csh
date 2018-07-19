@@ -54,3 +54,9 @@ if ( -d $dgdb ) then
 	setenv PATH ${dgdb}/bin:${PATH}
 	setenv LD_LIBRARY_PATH ${dgdb}/lib:${LD_LIBRARY_PATH}
 endif
+
+# to get xrootd
+set dxrd=${LOCAL}/xrootd
+if ( -d $dxrd ) then
+	setenv LD_LIBRARY_PATH ${dxrd}/lib64:${LD_LIBRARY_PATH}
+endif

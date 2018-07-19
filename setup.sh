@@ -7,6 +7,7 @@ xercesc \
 boost \
 tbb \
 gdb \
+xrootd \
 )
 
 INSTALLS_ALL=(
