@@ -5,7 +5,7 @@ mkdir -p $LOCAL
 export LCG=/cvmfs/sft.cern.ch/lcg/views/LCG_89/x86_64-slc6-gcc62-opt
 
 # to get gcc+binutils
-source /cvmfs/sft.cern.ch/lcg/contrib/gcc/6.2binutils/x86_64-slc6-gcc62-opt/setup.sh
+source /cvmfs/sft.cern.ch/lcg/contrib/gcc/6.2binutils/x86_64-slc6/setup.sh
 
 # to get cmake
 export PATH=/cvmfs/sft.cern.ch/lcg/contrib/CMake/3.5.2/Linux-x86_64/bin/:${PATH}
