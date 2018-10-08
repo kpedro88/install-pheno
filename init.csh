@@ -15,6 +15,14 @@ source /cvmfs/sft.cern.ch/lcg/releases/ROOT/6.10.02-19565/x86_64-slc6-gcc62-opt/
 setenv PATH ${PATH}:${ROOTSYS}/bin
 setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:${ROOTSYS}/lib
 
+# to get Delphes
+set ddelphes=${LOCAL}/delphes/install
+if ( -d $ddelphes ) then
+	setenv PATH ${ddelphes}/bin:${PATH}
+	setenv LD_LIBRARY_PATH ${ddelphes}/lib:${LD_LIBRARY_PATH}
+	setenv ROOT_INCLUDE_PATH ${ddelphes}/include
+endif
+
 # to get python
 set dpython=${LOCAL}/python
 if ( -d $dpython ) then
